@@ -1,4 +1,4 @@
-export default function Organization(organization) {
+export default function Organization({ organizationData, pages, setFetched }) {
   //   avatar_url: "https://avatars1.githubusercontent.com/u/1342004?v=4"
   // blog: "https://opensource.google/"
   // company: null
@@ -29,8 +29,6 @@ export default function Organization(organization) {
   // updated_at: "2020-06-23T17:20:00Z"
   // url: "https://api.github.com/orgs/google"
 
-  const organizationData = organization.organizationData;
-
   const title =
     organizationData.login.charAt(0).toUpperCase() +
     organizationData.login.slice(1);
@@ -47,7 +45,20 @@ export default function Organization(organization) {
   return (
     <div className="organization">
       <div className="header">
-        <button type="submit"></button>
+        <div
+          className="back"
+          onClick={() => {
+            setFetched(false);
+          }}
+        >
+          {"<"}
+        </div>
+        <div className="organization-header-title">
+          <p>{organizationData.login}</p>
+        </div>
+        <div className="notifications">
+          <p>Notificações</p>
+        </div>
       </div>
       <div className="avatar-div">
         <img className="avatar" src={avatar} alt="avatar" />

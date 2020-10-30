@@ -6,6 +6,8 @@ import Organization from "../Organization";
 function SearchOrganization() {
   const [organization, setOrganization] = useState("");
   const [organizationData, setOrganizationData] = useState([]);
+  const [organizationRepos, setOrganizationRepos] = useState([]);
+  const [pages, setPages] = useState();
   const [loading, setLoading] = useState(false);
   const [fetched, setFetched] = useState(false);
   const [error, setError] = useState(false);
@@ -19,11 +21,16 @@ function SearchOrganization() {
     try {
       e.preventDefault();
 
-      const result = await api.get(organization);
+      const orgInfo = await api.get(organization);
 
-      console.log(result.data);
+      setOrganizationData(orgInfo.data);
 
-      setOrganizationData(result.data);
+      const repoPages = Math.ceil(orgInfo.data.public_repos / 30);
+      setPages(repoPages);
+
+      const orgRepos = await api.get(organization + "/repos");
+
+      setOrganizationRepos(orgRepos);
 
       // const response = await api.get(`/repos/${newRepo}`);
 
@@ -72,7 +79,14 @@ function SearchOrganization() {
 
       {loading && <p>carregando...</p>}
 
-      {fetched && <Organization organizationData={organizationData} />}
+      {fetched && (
+        <Organization
+          organizationData={organizationData}
+          organizationRepos={organizationRepos}
+          pages={pages}
+          setFetched={setFetched}
+        />
+      )}
 
       {error && <p>Organização não encontrada</p>}
     </>
