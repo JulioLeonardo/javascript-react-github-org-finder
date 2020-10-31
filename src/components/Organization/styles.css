@@ -18,7 +18,9 @@
 
 .avatar-info-wrap {
   display: flex;
-  padding: 24px 16px 12px;
+  max-width: 90%;
+  margin: auto;
+  padding: 24px 0 12px;
 }
 
 .avatar-div img {
@@ -61,7 +63,7 @@
   padding: 2px;
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: #22863a;
   border: 1px solid #28a745;
@@ -86,4 +88,21 @@
 
 .repos-title {
   padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .info {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  svg.info {
+    margin-top: 10px;
+  }
+
+  .verified {
+    margin-top: 0;
+  }
 }
