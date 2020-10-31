@@ -29,10 +29,9 @@
 </h4>
 
 <h1 align="center" >
-  <img alt="home-mobile" title="home-mobile" src="./src/assets/screenshots/home-mobile.PNG" height="350" />
-  <img alt="list-mobile" title="list-mobile" src="./src/assets/screenshots/list-mobile.PNG" height="350" />
-  <img alt="synopsis-modal-mobile" title="synopsis-modal-mobile" src="./src/assets/screenshots/sy-modal-mobile.PNG" height="350" />
-  <img alt="no-movies-mobile" title="no-movies-mobile" src="./src/assets/screenshots/no-movies-mobile.PNG" height="350" />
+  <img alt="home-mobile" title="home-mobile" src="./src/assets/img/screenshots/home-mobile.PNG" height="350" />
+  <img alt="repo-mobile" title="repo-mobile" src="./src/assets/img/screenshots/repo-mobile.PNG" height="350" />
+  <img alt="erro-mobile" title="erro-mobile" src="./src/assets/img/screenshots/erro-mobile.PNG" height="350" />
 </h1>
 
 <h4>
@@ -40,10 +39,9 @@
 </h4>
 
 <h1 align="center" >
-  <img alt="home" title="home" src="./src/assets/screenshots/home.PNG" height="250" />
-  <img alt="list" title="list" src="./src/assets/screenshots/list.PNG" height="250" />
-  <img alt="synopsis" title="synopsis" src="./src/assets/screenshots/sy-modal.PNG" height="250" />
-  <img alt="no-movies" title="no-movies" src="./src/assets/screenshots/no-movies.PNG" height="250" />
+  <img alt="home" title="home" src="./src/assets/img/screenshots/home-desktop.PNG" height="250" />
+  <img alt="repo" title="repo" src="./src/assets/img/screenshots/repo-desktop.PNG" height="250" />
+  <img alt="erro" title="erro" src="./src/assets/img/screenshots/erro-desktop.PNG" height="250" />
 </h1>
 
 <h1 id="requisitos">
