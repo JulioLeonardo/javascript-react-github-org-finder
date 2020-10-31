@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://api.netlify.com/api/v1/badges/36895b9b-53e8-4e21-b5b7-5c2940bf5891/deploy-status" alt="Banner" />
+  <img src="https://i.imgur.com/pgLBIUu.png" alt="Banner" />
+</p>
+
+<p align="center">
+  <img src="https://api.netlify.com/api/v1/badges/36895b9b-53e8-4e21-b5b7-5c2940bf5891/deploy-status" alt="netlify-badge" />
 </p>
 
 <h1 align="center">
