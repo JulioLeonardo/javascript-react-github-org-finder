@@ -126,7 +126,10 @@ export default function Organization({ organizationData, setFetched }) {
           {verified && <p className="verified">Verified</p>}
         </div>
       </div>
-      <OrgRepos login={login} totalRepos={totalRepos} />
+      <div className="repos-wrapper">
+        <p>Repositórios</p>
+        <OrgRepos login={login} totalRepos={totalRepos} />
+      </div>
     </div>
   );
 }

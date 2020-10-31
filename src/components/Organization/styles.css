@@ -70,3 +70,9 @@
   border-radius: 50px;
   display: inline-block;
 }
+
+.repos-wrapper {
+  max-width: 90%;
+  padding-top: 15px;
+  margin: auto;
+}
