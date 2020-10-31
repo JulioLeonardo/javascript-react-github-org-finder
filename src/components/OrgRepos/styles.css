@@ -278,14 +278,14 @@ ul.rc-pagination {
 .rc-pagination.rc-pagination-disabled .rc-pagination-item-ellipsis {
   opacity: 1;
 }
-@media only screen and (max-width: 992px) {
-  .rc-pagination-item-after-jump-prev,
-  .rc-pagination-item-before-jump-next {
-    display: none;
+
+@media only screen and (min-width: 768px) {
+  .rc-pagination li {
+    display: flex;
   }
-}
-@media only screen and (max-width: 576px) {
-  .rc-pagination-options {
-    display: none;
+
+  .rc-pagination {
+    display: flex;
+    min-width: 460px;
   }
 }
