@@ -5,6 +5,7 @@ import Pagination from "rc-pagination";
 import api from "../../services/api";
 import Repo from "../Repo";
 import githubColors from "../../services/githubColors";
+import "./styles.css";
 
 export default function OrgRepos({ login, totalRepos }) {
   const [organizationRepos, setOrganizationRepos] = useState([]);
