@@ -18,9 +18,7 @@
 
 .avatar-info-wrap {
   display: flex;
-  padding-top: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 24px 16px 12px;
 }
 
 .avatar-div img {
@@ -75,4 +73,13 @@
   max-width: 90%;
   padding-top: 15px;
   margin: auto;
+}
+
+.organization hr {
+  width: 90%;
+
+  margin: auto;
+  border-width: 0;
+  height: 1px;
+  background-color: rgb(206, 206, 206);
 }

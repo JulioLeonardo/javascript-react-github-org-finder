@@ -25,3 +25,11 @@ button:hover {
 input {
   outline: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
