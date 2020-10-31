@@ -1,15 +1,36 @@
 .rc-pagination {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-size: 14px;
 }
+
+.rc-pagination li {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.rc-pagination li:first-child,
+.rc-pagination li:nth-last-child(2) {
+  display: inline-flex;
+}
+
 .rc-pagination ul,
 .rc-pagination ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.rc-pagination::after {
+
+ul.rc-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 160px;
+  margin: auto;
+}
+
+.rc-pagination:fi .rc-pagination::after {
   display: block;
   clear: both;
   height: 0;
@@ -139,10 +160,12 @@
 .rc-pagination-prev button:after {
   content: "‹ Previous";
   display: block;
+  font-size: 14px;
 }
 .rc-pagination-next button:after {
   content: "Next ›";
   display: block;
+  font-size: 14px;
 }
 .rc-pagination-disabled,
 .rc-pagination-disabled:hover,

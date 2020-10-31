@@ -1,3 +1,5 @@
+import "./styles.css";
+
 export default function Repo({ repo, colors }) {
   const repoLanguage = repo.language;
 
@@ -46,6 +48,7 @@ export default function Repo({ repo, colors }) {
         <p className="repo-stars">{repo.stargazers_count}</p>
         <p className="repo-issues">{repo.open_issues}</p>
       </div>
+      <hr className="repo-hr" />
     </div>
   );
 }
