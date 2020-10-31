@@ -3,11 +3,9 @@ import { useState } from "react";
 import api from "../../services/api";
 import Organization from "../Organization";
 
-function SearchOrganization() {
+export default function SearchOrganization() {
   const [organization, setOrganization] = useState("");
   const [organizationData, setOrganizationData] = useState([]);
-  const [organizationRepos, setOrganizationRepos] = useState([]);
-  const [pages, setPages] = useState();
   const [loading, setLoading] = useState(false);
   const [fetched, setFetched] = useState(false);
   const [error, setError] = useState(false);
@@ -25,32 +23,6 @@ function SearchOrganization() {
 
       setOrganizationData(orgInfo.data);
 
-      const repoPages = Math.ceil(orgInfo.data.public_repos / 30);
-      setPages(repoPages);
-
-      const orgRepos = await api.get(organization + "/repos");
-
-      setOrganizationRepos(orgRepos);
-
-      // const response = await api.get(`/repos/${newRepo}`);
-
-      // if (repositories) {
-      //   repositories.map((repo) => {
-      //     if (repo.name === response.data.full_name) {
-      //       throw new Error("Repositório Duplicado");
-      //     }
-      //   });
-      // }
-
-      // const data = {
-      //   name: response.data.full_name,
-      // };
-
-      // this.setState({
-      //   repositories: [...repositories, data],
-      //   newRepo: "",
-      //   loading: false,
-      // });
       setLoading(false);
       setFetched(true);
     } catch (e) {
@@ -82,8 +54,6 @@ function SearchOrganization() {
       {fetched && (
         <Organization
           organizationData={organizationData}
-          organizationRepos={organizationRepos}
-          pages={pages}
           setFetched={setFetched}
         />
       )}
@@ -92,5 +62,3 @@ function SearchOrganization() {
     </>
   );
 }
-
-export default SearchOrganization;
