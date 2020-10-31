@@ -2,7 +2,11 @@ import OrgRepos from "../OrgRepos";
 
 import "./styles.css";
 
-export default function Organization({ organizationData, setFetched }) {
+export default function Organization({
+  organizationData,
+  setFetched,
+  setOrganization,
+}) {
   const login = organizationData.login;
   const title = login.charAt(0).toUpperCase() + login.slice(1);
   const avatar = organizationData.avatar_url;
@@ -19,9 +23,11 @@ export default function Organization({ organizationData, setFetched }) {
     <div className="organization">
       <div className="organization-header">
         <div
-          className="back"
+          className="go-back"
+          itemType="button"
           onClick={() => {
             setFetched(false);
+            setOrganization("");
           }}
         >
           {"< Voltar"}

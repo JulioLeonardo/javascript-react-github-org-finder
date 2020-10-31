@@ -96,6 +96,7 @@ export default function SearchOrganization() {
         <Organization
           organizationData={organizationData}
           setFetched={setFetched}
+          setOrganization={setOrganization}
         />
       )}
 
