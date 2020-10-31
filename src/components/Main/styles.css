@@ -490,6 +490,10 @@
   left: 15px;
 }
 
+.go-back:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
   .search-organization {
     display: grid;

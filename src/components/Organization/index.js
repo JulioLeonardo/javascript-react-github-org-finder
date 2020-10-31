@@ -23,7 +23,7 @@ export default function Organization({
     <div className="organization">
       <div className="organization-header">
         <div
-          className="go-back"
+          className="back"
           itemType="button"
           onClick={() => {
             setFetched(false);

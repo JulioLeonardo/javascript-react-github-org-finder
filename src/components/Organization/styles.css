@@ -7,8 +7,12 @@
   align-items: center;
 }
 
-.go-back:hover {
+.back:hover {
   cursor: pointer;
+}
+
+.organization-header {
+  position: unset;
 }
 
 .organization-header-title {
