@@ -98,6 +98,7 @@ export default function Repo({ repo, colors }) {
         <p className="repo-issues">
           <span>
             <svg
+              id="issue-svg"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               width="16"
