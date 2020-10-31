@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import api from "../../services/api";
 import Organization from "../Organization";
-import search from "../../assets/icons/search.svg";
 import "./styles.css";
 
 export default function SearchOrganization() {

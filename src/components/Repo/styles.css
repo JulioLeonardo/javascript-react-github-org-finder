@@ -16,8 +16,16 @@
   padding-bottom: 20px;
 }
 
-.repo-language-color {
+.repo-info p {
+  display: flex;
+}
+
+.repo-info span {
   margin-right: 5px;
+}
+
+.repo-info svg {
+  padding: 1px;
 }
 
 .repo-hr {
