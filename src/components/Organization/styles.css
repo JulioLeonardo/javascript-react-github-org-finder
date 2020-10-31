@@ -83,3 +83,7 @@
   height: 1px;
   background-color: rgb(206, 206, 206);
 }
+
+.repos-title {
+  padding-bottom: 30px;
+}

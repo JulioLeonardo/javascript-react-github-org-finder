@@ -128,7 +128,7 @@ export default function Organization({ organizationData, setFetched }) {
       </div>
       <hr />
       <div className="repos-wrapper">
-        <p>Repositórios</p>
+        <p className="repos-title">Repositórios</p>
         <OrgRepos login={login} totalRepos={totalRepos} />
       </div>
     </div>
