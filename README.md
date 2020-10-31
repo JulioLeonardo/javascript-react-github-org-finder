@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="https://api.netlify.com/api/v1/badges/36895b9b-53e8-4e21-b5b7-5c2940bf5891/deploy-status" alt="Banner" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+ <a href="#capturas">Capturas</a> •
+ <a href="#requisitos">Pré-requisitos</a> • 
+ <a href="#rodando">Rodando o projeto</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autor">Autor</a> • 
+ <a href="#licenc-a">Licença</a>
 
-## Available Scripts
+</h1>
 
-In the project directory, you can run:
+<h4 align="center"> 
+	Projeto em produção pelo Netlify em: <a href="https://hardcore-shirley-781fda.netlify.app/" target="_blank">Github Orgs</a>  
+</h4>
 
-### `yarn start`
+# Recursos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] Recebe um handler na página principal e lista os repositórios da organização no Github
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h1 id="capturas">
+	Capturas de Tela
+</h1>
 
-### `yarn test`
+<h4>
+	Mobile
+</h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1 align="center" >
+  <img alt="home-mobile" title="home-mobile" src="./src/assets/screenshots/home-mobile.PNG" height="350" />
+  <img alt="list-mobile" title="list-mobile" src="./src/assets/screenshots/list-mobile.PNG" height="350" />
+  <img alt="synopsis-modal-mobile" title="synopsis-modal-mobile" src="./src/assets/screenshots/sy-modal-mobile.PNG" height="350" />
+  <img alt="no-movies-mobile" title="no-movies-mobile" src="./src/assets/screenshots/no-movies-mobile.PNG" height="350" />
+</h1>
 
-### `yarn build`
+<h4>
+	Web
+</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h1 align="center" >
+  <img alt="home" title="home" src="./src/assets/screenshots/home.PNG" height="250" />
+  <img alt="list" title="list" src="./src/assets/screenshots/list.PNG" height="250" />
+  <img alt="synopsis" title="synopsis" src="./src/assets/screenshots/sy-modal.PNG" height="250" />
+  <img alt="no-movies" title="no-movies" src="./src/assets/screenshots/no-movies.PNG" height="250" />
+</h1>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h1 id="requisitos">
+	Pré-requisitos
+</h1>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+<a href="https://git-scm.com" target="_blank">Git</a>, <a href="https://nodejs.org/en/" target="_blank">Node.js</a> <br>
+Além disto é bom ter um editor para trabalhar com o código como <a href="https://code.visualstudio.com/" target="_blank">VScode</a>
+</p>
 
-### `yarn eject`
+<h1 id="rodando">
+	Rodando o projeto
+</h1>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone este repositório
+$ git clone https://github.com/JulioLeonardo/javascript-react-github-org-finder
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd javascript-react-github-org-finder
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Abra a pasta no VScode
+$ code .
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Abra o terminal com ctrl + ' e instale as dependências
+$ yarn
 
-## Learn More
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# A aplicação inciará na porta:3000 - acesse <http://localhost:3000>
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h1 id="tecnologias">
+	Tecnologias
+</h1>
 
-### Code Splitting
+As seguintes ferramentas foram usadas na construção do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [JavaScript](https://www.ecma-international.org/publications/standards/Ecma-006.htm)
+- [React](https://pt-br.reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Prettier](https://prettier.io/)
+- [Axios](https://github.com/axios/axios)
 
-### Analyzing the Bundle Size
+<h1 id="autor">
+	Autor
+</h1>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<a href="https://github.com/JulioLeonardo">
+ <img style="border-radius: 50%;" src="https://i.imgur.com/5HQ9tWb.png?1" width="100px;" alt=""/>
+ <br />
+ <sub><b>Julio Leonardo</b></sub></a> <a href="https://github.com/JulioLeonardo" title="Julio">🚀</a>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feito com ❤️ por Julio Leonardo 👋🏽 Entre em contato!
 
-### Advanced Configuration
+[![Linkedin Badge](https://img.shields.io/badge/-Julio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/JulioLeonardoCarvalho/)](https://www.linkedin.com/in/JulioLeonardoCarvalho/) 
+[![Gmail Badge](https://img.shields.io/badge/-juleolica@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:juleolica@gmail.com)](mailto:juleolica@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<h1 id="licenc-a">
+	Licença
+</h1>
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://img.shields.io/badge/license-MIT-green" alt="lcense"/>
