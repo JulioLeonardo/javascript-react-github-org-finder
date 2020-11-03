@@ -512,6 +512,7 @@
 
   .main-header {
     left: 5%;
+    right: unset;
   }
 
   .search-block {
